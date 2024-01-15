@@ -1,0 +1,277 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link rel="shortcut icon" href="bg.png" type="image/logo.png" />
+        <style>
+
+
+            *{
+    font-family:monospace;
+    font-weight:300;
+                color: aliceblue;
+}
+body, ul, li{
+    margin:0;
+    padding:0;
+}
+
+body{
+    background-color: #3C0753;
+}
+.wrapper{
+    width:96%;
+    max-width: 1200px;
+    margin:0 auto;
+    padding:0 2%;
+}
+header{
+    background-color: #030637;
+    padding:10px 0;
+}
+.logo{
+    margin:0;
+    
+    background: url(logo.png);
+    background-size:70px 70px;
+    float:left;
+    width:70px;
+    height:70px;
+}
+header:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+header nav{
+    float:right;
+}
+
+header nav li{
+    list-style-type:none;
+    float:left;
+    margin-left:20px;
+    margin-top:20px;
+}
+header nav li a{
+    text-decoration:none;
+    color:deeppink;
+    font-size:15px;
+    text-transform: uppercase;
+}
+            #main-banner {
+                width: 100%;
+                max-height: 500px;
+                overflow: hidden;
+            }
+            #main-banner img {
+                width: 100%;
+            }
+            #slider {
+                overflow: hidden;
+            }
+            #slides {
+                position: relative;
+                width: 500%;
+                margin: 0;
+                left: 0;
+                text-align: left;
+                font-size: 0;
+                animation: 18s slidy infinite;
+            }
+            #slides img {
+                width: 20%;
+                float: left;
+            }
+            #usp {
+                margin-top: 60px;
+            }
+            #usp li{
+                float: left;
+                width: 23%;
+                padding: 1%;
+                text-align: center;
+                list-style-type: none;
+            }
+            #usp li img {
+                height: 80px;
+                padding: 20px;
+                background-color: #720455;
+                border-radius: 50%;
+            }
+            #usp li h2 {
+                font-size: 16px;
+                font-weight: 400;
+            }
+            #usp:after {
+                content: "";
+                display: block;
+                clear: both;
+            }
+            #products {
+                padding-top: 30px;
+                margin-top: 30px;
+                border-top: 2px solid lightgrey;
+            }
+            #products li {
+                float: left;
+                width: 32%;
+                list-style-type: none;
+                text-align: center;
+            }
+            #products li img {
+                width: 100%;
+            }
+            #products li:nth-child(even) {
+                margin: 0 1%;
+            }
+            #products:after {
+                content: "";
+                display: block;
+                clear: both;
+            }
+            #our-products {
+                text-align: center;
+            }
+            footer{
+    width:100%;
+    background-color: #910A67;
+    padding: 30px 0;
+    margin-top:60px;
+}
+footer ul{
+    float:left;
+    width:48%;
+    margin:1%;
+}
+footer ul h3{
+    font-size:30px;
+    color: azure;
+}
+footer ul li{
+    list-style-type: none;
+    font-size:15px;
+    color: azure;
+}
+footer:after{
+    display:block;
+    content:"";
+    clear:both;
+}
+            
+            .wel{
+                color: aliceblue;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- Header Starts -->
+        <header>
+<font size=32  >
+<center>
+    <a class="wel">Welcome to Ruchika books!</a>
+</center>
+</font>
+            <div class="wrapper">
+                <div class="logo"></div>
+                <nav>
+                    <div class="menu"></div>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#products">About us</a></li>
+                        <li><a href="product.html">Products</a></li>
+                        <li><a href="#contact">Contact us</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <!-- Header Ends -->
+        
+        <!-- Banner Starts -->
+        <div id="main-banner">
+            <div id="slider">
+                <div id="slides">
+                    <img src="bookstore.jpg" alt="banner" class="h">
+                </div>
+            </div>
+        </div>
+        <!-- Banner Ends -->
+        
+        <!-- USP Section starts -->
+        <div class="wrapper">
+            <section id="usp">
+                <ul>
+                    <li>
+                        <img src="box.png">
+                        <h2>Wide Range of Products</h2>
+                    </li>
+                    <li>
+                        <img src="store.png">
+                        <h2>Multiple Stores</h2>
+                    </li>
+                    <li>
+                        <img src="man.png">
+                        
+                        <h2>Happy Customers</h2>
+                    </li>
+                    <li>
+                        <img src="tick.png">
+                        <h2>Satisfation Guaranteed</h2>
+                    </li>
+                </ul>
+            </section>
+        </div>
+        <!-- USP Section Ends -->
+        
+        <!-- Product Starts -->
+        <div class="wrapper">
+            <section id="products">
+                <h2 id="our-products">Our Products</h2>
+                <ul>
+                    <li>
+                        <img src="harry.jpg">
+                        <h2>Harry Potter</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut cursus eros ac magna finibus aliquet. In hac habitasse platea dictumst. Donec ac nunc quis diam elementum fringilla.</p>
+                    </li>
+                    <li>
+                        <img src="geronimo.jpg">
+                        <h2>Geronimo stilton</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut cursus eros ac magna finibus aliquet. In hac habitasse platea dictumst. Donec ac nunc quis diam elementum fringilla.</p>
+                    </li>
+                    <li>
+                        <img src="nancy.jpg">
+                        <h2>and many more</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut cursus eros ac magna finibus aliquet. In hac habitasse platea dictumst. Donec ac nunc quis diam elementum fringilla.</p>
+                    </li>
+                </ul>
+            </section>
+        </div>
+        <!-- Product Ends -->
+        
+        
+        <!--Footer Starts-->
+        <footer>
+            <div class="wrapper">
+                <div id="contact">
+                <ul>
+                    <h3>HARRY POTTER THE POP UP BOOK AVAILABLE NOW!</h3>
+                    <li>Ruchika books - Delhi, India</li>
+                    <li>Address: ABC Avenue, 123-321</li>
+                    <li>Call Today - +91 98765 43210</li>
+<li>Email us at- 1234books@gmail.com</li>
+                </ul>
+                <ul><iframe width="560" height="315" src="https://www.youtube.com/embed/DENMtYhzgYo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></ul>
+                </div>
+            </div>
+        </footer>
+        <!-- Footer Ends -->
+    
+<div style="text-align:right;position:fixed;bottom:3px;right:3px;width:100%;z-index:999999;cursor:pointer;line-height:0;display:block;"><a target="_blank" href="https://www.freewebhostingarea.com" title="Free Web Hosting with PHP5 or PHP7"><img alt="Free Web Hosting" src="https://www.freewebhostingarea.com/images/poweredby.png" style="border-width: 0px;width: 180px; height: 45px; float: right;"></a></div>
+</body>
+</html>
